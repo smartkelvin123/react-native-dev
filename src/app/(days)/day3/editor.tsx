@@ -99,8 +99,8 @@ const styles = StyleSheet.create({
     backgroundColor: "white",
     flex: 1,
     padding: 20,
-    // paddingTop: 20,
-    // borderRadius: 10,
+    paddingTop: 20,
+    borderRadius: 10,
     fontSize: 16,
   },
 
