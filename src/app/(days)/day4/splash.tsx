@@ -1,14 +1,13 @@
-import { StyleSheet, Text, View } from "react-native";
-import React from "react";
+import { View, Text, Button } from "react-native";
+import LottieView from "lottie-react-native";
+import { useRef } from "react";
+import { Stack } from "expo-router";
+import AnimatedSplashScreen from "../../../components/day4/AnimatedSplashScreen";
 
-const SplashScreen = () => {
-  return (
-    <View>
-      <Text>splash</Text>
-    </View>
-  );
+const AnimationScreen = () => {
+  const animation = useRef<LottieView>(null);
+
+  return <AnimatedSplashScreen />;
 };
 
-export default SplashScreen;
-
-const styles = StyleSheet.create({});
+export default AnimationScreen;
