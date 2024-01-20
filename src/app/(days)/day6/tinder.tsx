@@ -30,7 +30,7 @@ const dummuUsers = [
     id: 3,
     image:
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/vertical-images/3.jpg",
-    name: "Dani",
+    name: "kelvin",
   },
   {
     id: 4,
@@ -42,7 +42,7 @@ const dummuUsers = [
     id: 5,
     image:
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/vertical-images/5.jpg",
-    name: "Dani",
+    name: "smart",
   },
   {
     id: 6,
@@ -68,14 +68,11 @@ const TinderScreen = () => {
 
   useEffect(() => {
     if (index > users.length - 3) {
-      console.warn("Last 2 cards remining. Fetch more!");
       setUsers((usrs) => [...usrs, ...dummuUsers.reverse()]);
     }
   }, [index]);
 
-  const onResponse = (res: boolean) => {
-    console.log("on Response: ", res);
-  };
+  const onResponse = (res: boolean) => {};
 
   return (
     <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
