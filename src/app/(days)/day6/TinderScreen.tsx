@@ -1,4 +1,4 @@
-import TinderCard from "@/components/day6/TinderCard";
+import TinderCard from "../../../components/day6/TinderCard";
 import { Stack } from "expo-router";
 import { View } from "react-native";
 import { useSharedValue } from "react-native-reanimated";
