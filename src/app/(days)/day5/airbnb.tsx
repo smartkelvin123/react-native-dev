@@ -4,10 +4,8 @@ import MapView, { PROVIDER_GOOGLE } from "react-native-maps";
 import { Stack } from "expo-router";
 import apartments from "../../../../assets/data/day5/Apartment.json";
 import CustomMarker from "../../../components/day5/CustomMarker";
-
-import ApartmentListItem from "../../../components/day5/AppartmentListItem";
-
 import BottomSheet, { BottomSheetFlatList } from "@gorhom/bottom-sheet";
+import ApartmentListItem from "../../../components/day5/AppartmentListItem";
 
 type Apartment = (typeof apartments)[0];
 
