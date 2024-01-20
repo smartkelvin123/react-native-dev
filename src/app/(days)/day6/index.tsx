@@ -13,7 +13,7 @@ Let's build the Tinder Swipe Animation in React Native using Reanimated
 const DayDetailsScreen = () => {
   return (
     <SafeAreaView edges={["bottom"]} style={{ flex: 1 }}>
-      <Stack.Screen options={{ title: "Day 6: Tinder" }} />
+      <Stack.Screen options={{ title: "Day 6: Tinder", headerShown: false }} />
 
       <MarkdownDisplay>{description}</MarkdownDisplay>
 
