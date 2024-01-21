@@ -16,7 +16,7 @@ import Animated, {
   withSpring,
   withTiming,
 } from "react-native-reanimated";
-import MemoListItem, { Memo } from "@/components/day7/MemoListItem";
+import MemoListItem, { Memo } from "../../../components/day7/MemoListItem";
 
 export default function MemosScreen() {
   const [recording, setRecording] = useState<Recording>();
