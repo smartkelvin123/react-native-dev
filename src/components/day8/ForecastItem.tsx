@@ -5,15 +5,11 @@ import { BlurView } from "expo-blur";
 
 const ForecastItem = ({ forecast }: { forecast: WeatherForecast }) => {
   return (
-    <View
-      // intensity={30}
-      style={styles.container}
-    >
+    <View style={styles.container}>
       {/* // <BlurView intensity={30} style={styles.container}> */}
-      {/* <Text style={styles.temp}>{Math.round(forecast.main.temp)}°</Text> */}
+
       <Text style={styles.temp}>{Math.floor(forecast.main.temp)}°</Text>
       <Text style={styles.date}>
-        {/* {dayjs(forecast.dt * 1000).format("ddd ha")} */}
         {dayjs(forecast.dt * 1000).format("ddd ha")}
       </Text>
       {/* </BlurView> */}
