@@ -85,7 +85,6 @@ const WeatherScreen = () => {
     );
     console.log(location.coords.latitude, location.coords.longitude);
     const data = await results.json();
-    // console.log(JSON.stringify(data, null, 2));
     setWeather(data);
   };
 
@@ -134,7 +133,7 @@ const WeatherScreen = () => {
         />
         <Text style={styles.location}>{weather.name}</Text>
         <Text style={styles.temp}>{Math.floor(weather.main.temp)}°</Text>
-        {/* <Text style={styles.temp}>{weather.main.temp}°</Text> */}
+
         <Text style={styles.location}>{weather.weather[0].main}</Text>
       </View>
 

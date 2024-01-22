@@ -1,7 +1,7 @@
 import { WeatherForecast } from "../../app/(days)/day8/weather";
 import { Text, StyleSheet, View } from "react-native";
 import dayjs from "dayjs";
-import { BlurView } from "expo-blur";
+// import { BlurView } from "expo-blur";
 
 const ForecastItem = ({ forecast }: { forecast: WeatherForecast }) => {
   return (
