@@ -89,7 +89,6 @@ const WeatherScreen = () => {
   };
 
   const fetchForecast = async () => {
-    // api.openweathermap.org/data/2.5/forecast?lat=44.34&lon=10.99&appid={API key}
     if (!location) {
       return;
     }
@@ -98,7 +97,7 @@ const WeatherScreen = () => {
       `${BASE_URL}/forecast?lat=${location.coords.latitude}&lon=${location.coords.longitude}&appid=${OPEN_WEATHER_KEY}&units=metric`
     );
     const data = await results.json();
-    // console.log(JSON.stringify(data, null, 2));
+
     setForecast(data.list);
   };
 
