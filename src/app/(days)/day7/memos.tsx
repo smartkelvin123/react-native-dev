@@ -1,12 +1,5 @@
 import { useState } from "react";
-import {
-  Text,
-  View,
-  StyleSheet,
-  Button,
-  FlatList,
-  Pressable,
-} from "react-native";
+import { View, StyleSheet, FlatList, Pressable } from "react-native";
 import { Audio } from "expo-av";
 import { Recording } from "expo-av/build/Audio";
 import Animated, {
