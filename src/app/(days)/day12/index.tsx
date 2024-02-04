@@ -11,7 +11,9 @@ Video feed similar to TikTok, IG Reels, Youtube Shorts`;
 const DayDetailsScreen = () => {
   return (
     <SafeAreaView edges={["bottom"]} style={{ flex: 1 }}>
-      <Stack.Screen options={{ title: "Day 12: Video Feed" }} />
+      <Stack.Screen
+        options={{ title: "Day 12: Video Feed", headerShown: false }}
+      />
 
       <MarkdownDisplay>{description}</MarkdownDisplay>
 

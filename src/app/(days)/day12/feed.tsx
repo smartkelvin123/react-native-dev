@@ -70,7 +70,7 @@ const FeedScreen = () => {
   return (
     <View style={styles.container}>
       <Stack.Screen options={{ headerShown: false }} />
-      <StatusBar style="light" />
+      <StatusBar style="dark" />
 
       <FlatList
         data={posts}

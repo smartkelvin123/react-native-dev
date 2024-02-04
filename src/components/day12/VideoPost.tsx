@@ -119,7 +119,7 @@ const styles = StyleSheet.create({
     fontSize: 18,
   },
   rightColumn: {
-    gap: 10,
+    gap: 15,
   },
 });
 
