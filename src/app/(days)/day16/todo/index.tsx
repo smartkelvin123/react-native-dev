@@ -15,7 +15,10 @@ import Reanimated, { CurvedTransition } from "react-native-reanimated";
 import { useHeaderHeight } from "@react-navigation/elements";
 
 import { useState } from "react";
-import { useTasks, type Task } from "@/components/day16/TasksContextProvider";
+import {
+  useTasks,
+  type Task,
+} from "../../../../components/day16/TasksContextProvider";
 
 const TodoScreen = () => {
   const [searchQuery, setSearchQuery] = useState("");
